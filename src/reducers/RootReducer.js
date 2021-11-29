@@ -1,11 +1,11 @@
 import { combineReducers } from "redux";
 import PokemonListReducer from "./PokemonListReducer";
-import PokemonMutipleReducer from "./PokemonMutipleReducer"
+import PokemonMultipleReducer from "./PokemonMultipleReducer";
 
-const RootReducer = combineReducers( {
-    PokemonList: PokemonListReducer,
-    Pokemon: PokemonMutipleReducer,
 
-})
+const RootReducer = combineReducers({
+    PokemonList:  PokemonListReducer,
+    Pokemon: PokemonMultipleReducer
+});
 
 export default RootReducer;
